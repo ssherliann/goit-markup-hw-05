@@ -73,6 +73,7 @@ a:focus {
 .header-link {
     position: relative;
     display: block;
+    padding: 24px 0;
     color: #2E2F42;
     font-weight: 500;
     line-height: 1.5;
@@ -107,7 +108,6 @@ a:focus {
     letter-spacing: 0.02em; 
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .navigation {
@@ -146,7 +146,7 @@ a:focus {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), 
-        url(/images/hero-image.jpg);
+        url(../images/hero-image.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
@@ -515,4 +515,130 @@ a:focus {
 
 .icon-svg {
     fill: #F4F4FD;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-title {
+    color:#2E2F42;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 72px 24px 16px;
+}
+
+.modal-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #E7E9FC;
+    padding: 0;
+    right: 24px;
+    top: 24px;
+}
+
+.modal-icon-btn {
+
+}
+
+.modal-label {
+    color:  #8E8F99;
+    font-size: 12px;
+    line-height: 1.6; 
+    letter-spacing: 0.04em;
+}
+
+.modal-input {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding-left: 38px;
+}
+
+.modal-input::placeholder {
+    color:  #8E8F99;
+    font-size: 12px;
+    line-height: 1.6; 
+    letter-spacing: 0.04em;
+}
+
+.modal-stroke {
+    padding-left: 24px;
+    gap: 8px;
+}
+
+.modal-comment {
+    padding-left: 16px;
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 120px;
+    max-height: 120px;
+}
+
+.modal-icon {
+    fill: #2E2F42;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-stroke-check {
+    display: flex;
+    padding-left: 24px;
+    padding-top: 16px;
+    gap: 8px;
+}
+
+.label-check {
+    color:#8E8F99;
+    font-size: 12px;
+    line-height: 1.6; 
+    letter-spacing: 0.04em;
+}
+
+.label-check span {
+    width: 16px;
+    height: 16px;   
+    stroke-width: 1px;
+    stroke: rgba(46, 47, 66, 0.40);
+}
+
+.modal-btn-submit {
+
 }
