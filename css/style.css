@@ -668,10 +668,6 @@ a:focus {
     pointer-events: auto;
 }
 
-.visually-hidden {
-    all: unset;
-}
-
 .modal-stroke-check {
     display: flex;
     margin-bottom: 24px; 
@@ -698,7 +694,7 @@ a:focus {
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.modal-input:checked + .label-check > .check {
+.modal-input-check:checked + .label-check > .check {
     border: none;
     fill: #F4F4FD;
     background-color: #404BBF;
