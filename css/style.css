@@ -694,11 +694,12 @@ a:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.visually-hidden:checked + .check{
+.check-input:checked + .label-check + .check {
     background-color: #404bbf;
     border: none; 
     fill:#F4F4FD;
 }
+
 
 .modal-link {
     color: #4d5ae5;
@@ -751,7 +752,7 @@ a:focus {
     background-color: transparent;
     color: #ffffff;
     font-size: 12px;
-    line-height: 2; 
+    line-height: 1.5; 
     letter-spacing: 0.04em;
     padding-left: 16px;
 }
