@@ -668,6 +668,10 @@ a:focus {
     pointer-events: auto;
 }
 
+.visually-hidden {
+    all: unset;
+}
+
 .modal-stroke-check {
     display: flex;
     margin-bottom: 24px; 
